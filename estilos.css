@@ -1,11 +1,4 @@
 
-		body{
-			background-image: url("img/imagem1.jpg");
-			background-size: cover;
-			background-repeat: no-repeat;
-  			background-position: right top;
-  			background-attachment: fixed;
-		}
 
     	.logotipo-decop{
 			width: 5.2em;
@@ -34,7 +27,7 @@
 			left: 0;
 			bottom: 0;
 			width: 100%;
-			text-align: left;
+			text-align: right;
 		}
 		.card-image{
 			width: 20%;
@@ -50,65 +43,23 @@
 		
 			
 		}
-		
-		/* Empurrar o overlay do menu lateral para o lado, deixando o menu clicavel */
-
-		.sidenav-overlay{
-			left: 21.5rem;
+		#myChart {
+			background-color:#ffffffe6 ;
+			margin-top: 8%;
+		}
+		#chartLinhaColuna{
+			background-color:#ffffffe6;
 		}
 
-		table, th, td {
-			border: 1px solid black;
-		  }
-		
-		.paragrafo_tabela {
-			line-height: 0.5;
-		}
-
-		blockquote {
-			border-left-color: black;
-		}
-
-		.btn {
-			background-color: #C77F47
-		}
-
-		.modal-close {
-			Background-color: #C77F47;
-			color: white;
-		}
-		
-		.collapsible-header{
-			padding: 0.7rem;
-		}
-
-		.collapsible-header:hover{
-			background-color: lightgray;
-		}
-
-		.collapsible-body {
-			background-color: white;
-		}
 
 		h3{
 			text-align: center;
 			margin: 10px 10px 0px;
 		}
 		
-		h6{
-			font-size: 2rem!important;	
-			display: inline!important;
-			vertical-align: middle!important;
-		}
+	
 
-		#iconemaior {
-			font-size: 2.5rem;
-			vertical-align: middle!important;
-			margin-bottom: 0.46rem;
-			margin-right: 2rem;
-		}
-
-		.chamada-para-acao{
+		.tituloPagina {
 			color: white;
 			text-shadow: 2px 2px black;
 			font-size: 2.3em;
@@ -117,5 +68,27 @@
 			border-radius: 5px;
 			box-sizing: border-box;
 		}
+
+		.cabecalhoTitulo, .titulo, .realize, .tipoIndicador{
+			text-transform: uppercase;
+			color: white;
+			text-shadow: 1px 1px black;
+			font-weight: bold;
+			
+		}
+
+		#Erro{
+			text-align: center;
+			color: white;
+			text-shadow: 2px 2px black;
+			font-size: 2em;
+			background-color:rgba(0,0,0,0.5);
+			padding: 10px;
+			border-radius: 5px;
+			box-sizing: border-box;
+			margin-top: 15%;
+		
+		}
+	
 
 		
