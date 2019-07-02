@@ -71,7 +71,7 @@
                             <div class="card-content">
                                 <span class="cabecalhoTitulo">Auditoria BNDES</span>
                               <div class="divider"></div>
-                              <span class="tipoIndicador"> TMA</span>
+                              <span class="tipoIndicador"> Percentual atendido</span>
                               <div class="divider"></div>
                                 <div class="col s6 text-center titulo">
                                     <div class="col s12 m6 text-center">Objetivo</div>
@@ -80,10 +80,10 @@
                                     <div class="col s12 m6 text-center">Realizado</div>
                                 </div>
                                 <div class="col s6 text-center realize">
-                                    <div class="col s12 m6 text-center">3</div>
+                                    <div class="col s12 m6 text-center">100%</div>
                                 </div>
                                 <div class="col s6 text-center realize">
-                                  <div class="col s12 m6 text-center">0</div>
+                                  <div id="resultadoAuditoriaBndes" class="col s12 m6 text-center"></div>
                                 </div>
                                 
                               </div>
@@ -112,7 +112,7 @@
                                   <div class="col s12 m6 text-center">3</div>
                               </div>
                               <div class="col s6 text-center realize">
-                                <div class="col s12 m6 text-center">0</div>
+                                <div id="resultadoOperacoesBndes" class="col s12 m6 text-center"></div>
                               </div>
                           </div>
                         </div>
@@ -140,7 +140,7 @@
                                   <div class="col s12 m6 text-center">3</div>
                               </div>
                               <div class="col s6 text-center realize">
-                                <div class="col s12 m6 text-center">0</div>
+                                <div id="resultadoComexAccAce" class="col s12 m6 text-center"></div>
                               </div>
                           </div>
                         </div>
@@ -170,7 +170,7 @@
                                   <div class="col s12 m6 text-center">3</div>
                               </div>
                               <div class="col s6 text-center realize">
-                                <div class="col s12 m6 text-center">0</div>
+                                <div id="resultadoComexExportacao" class="col s12 m6 text-center"></div>
                               </div>
                           </div>
                         </div>
@@ -198,7 +198,7 @@
                                 <div class="col s12 m6 text-center">3</div>
                             </div>
                             <div class="col s6 text-center realize">
-                              <div class="col s12 m6 text-center">0</div>
+                              <div id="resultadoComexAntecipados" class="col s12 m6 text-center"></div>
                             </div>
                         </div>
                       </div>
@@ -226,7 +226,7 @@
                               <div class="col s12 m6 text-center">3</div>
                           </div>
                           <div class="col s6 text-center realize">
-                            <div class="col s12 m6 text-center">0</div>
+                            <div id="resultadoSigcb" class="col s12 m6 text-center"></div>
                           </div>
                       </div>
                     </div>
@@ -256,7 +256,7 @@
                             <div class="col s12 m6 text-center">3</div>
                         </div>
                         <div class="col s6 text-center realize">
-                          <div class="col s12 m6 text-center">0</div>
+                          <div id="resultadoParametrizacaoMge" class="col s12 m6 text-center"></div>
                         </div>
                     </div>
                   </div>
@@ -272,7 +272,7 @@
                     <div class="card-content">
                         <span class="cabecalhoTitulo"> Atendimento Middle Office Comex</span>
                       <div class="divider"></div>
-                      <span class="tipoIndicador"> TMA</span>
+                      <span class="tipoIndicador">Nota atendimento</span>
                       <div class="divider"></div>
                         <div class="col s6 text-center titulo">
                             <div class="col s12 m6 text-center">Objetivo</div>
@@ -284,7 +284,7 @@
                             <div class="col s12 m6 text-center">3</div>
                         </div>
                         <div class="col s6 text-center realize">
-                          <div class="col s12 m6 text-center">0</div>
+                          <div id="resultadoAtendimentoMiddle" class="col s12 m6 text-center"></div>
                         </div>
                     </div>
                   </div>
@@ -311,7 +311,7 @@
                           <div class="col s12 m6 text-center">3</div>
                       </div>
                       <div class="col s6 text-center realize">
-                        <div class="col s12 m6 text-center">0</div>
+                        <div id="resultadoParametrizacaoGarantias" class="col s12 m6 text-center"></div>
                       </div>
                   </div>
                 </div>
@@ -343,7 +343,7 @@
 
 
 <div class="page-footer corporativo">
-    <p>Centralizadora Nacional do Corporativo | CEOPC © 2019 - Equipe de TI CEOPC/GEOPC</p>
+    <p>CEOPC © 2019 - Equipe de TI CEOPC/GEOPC</p>
 </div>
 
  <!-- Compiled and minified Java -->
@@ -351,27 +351,8 @@
 <script src="js/materialize.min.js"></script>
 <script src="js/index.js"></script>
 <script src="js/all.min.js"></script>
-
-
-<script>
-    
- function isIE() {
-  ua = navigator.userAgent;
-  /* MSIE used to detect old browsers and Trident used to newer ones*/
-  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
-  
-  return is_ie; 
-}
-/* Create an alert to show if the browser is IE or not */
-if (isIE()){
- 
-  window.location.href =("paginaIE.html")
-
-
-}
-
-
-</script>
+<script src="js/carrega_painel.js"></script>
+<script src="js/carrega_tabelas.js"></script>
 
 
 

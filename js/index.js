@@ -30,75 +30,21 @@
         height:520,
         indicators: true,
     });
-    //   setInterval(function() {
-    //     $('.carousel').carousel('next');
-    //   }, 10000);
+      setInterval(function() {
+        $('.carousel').carousel('next');
+      }, 10000);
 
-      var ctx = document.getElementById('myChart').getContext('2d');
-      var myChart = new Chart(ctx, {
+    // função que verifica se a pessoa está no IE
+    function isIE() {
+        ua = navigator.userAgent;
+        /* MSIE used to detect old browsers and Trident used to newer ones*/
+        var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+        
+        return is_ie; 
+      }
+      /* Create an alert to show if the browser is IE or not */
+      if (isIE()){
        
-        type: 'bar',
-          data: {
-              
-              labels: ['Comex', 'Bndes', 'SIGCB', 'Middle'],
-              datasets: [{
-                  label: 'Indicadores',
-                  data: [12, 19, 3, 5, 2, 3],
-                  backgroundColor: [
-                      'rgba(255, 99, 132, 1)',
-                      'rgba(54, 162, 235, 1)',
-                      'rgba(255, 206, 86, 1)',
-                      'rgba(75, 192, 192, 1)',
-                      
-                  ],
-                  borderColor: [
-                      'rgba(255, 99, 132, 1)',
-                      'rgba(54, 162, 235, 1)',
-                      'rgba(255, 206, 86, 1)',
-                      'rgba(75, 192, 192, 1)',
-                      
-                  ],
-                  borderWidth: 1
-              }]
-          },
-          options: {
-              scales: {
-                  yAxes: [{
-                      ticks: {
-                          beginAtZero: true
-                      }
-                  }]
-              }
-          }
-      });
-      var chart2 = document.getElementById('chartLinhaColuna')
-      var chartLinhaColuna = new Chart(chart2, {
-        type: 'bar',
-        data: {
-            datasets: [{
-                label: 'Relizado em dias',
-                data: [1,1,1,5],
-                backgroundColor: 
-                    'rgba(255, 99, 132, 0.5)'
-             
-            }, {
-                label: 'Objetivo',
-                data: [3,3,3,3],
-                backgroundColor: 
-                'rgba(211, 211, 211, 1)',
-                // Changes this dataset to become a line
-                type: 'line'
-            }],
-            labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril']
-        },
-        options: {
-            scales: {
-                
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }]
-            }
-        }
-    });
+        window.location.href =("paginaIE.html")
+            
+      }
