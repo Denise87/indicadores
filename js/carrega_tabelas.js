@@ -1,5 +1,36 @@
 var  mesTabela=[];
 var resultadoTabela=[];
+var bordaTabela=[
+    'rgba(255, 99, 132, 1)',
+    'rgba(54, 162, 235, 1)',
+    'rgba(255, 206, 86, 1)',
+    'rgba(75, 192, 192, 1)',
+    'rgba(9, 61, 98, 1)',
+    'rgba(154, 72, 162, 1)',
+    'rgba(255, 99, 132, 1)',
+    'rgba(54, 162, 235, 1)',
+    'rgba(255, 206, 86, 1)',
+    'rgba(75, 192, 192, 1)',
+    'rgba(9, 61, 98, 1)',
+    'rgba(154, 72, 162, 1)'   
+
+];
+var corTabela=[
+    'rgba(255, 99, 132, 1)',
+    'rgba(54, 162, 235, 1)',
+    'rgba(255, 206, 86, 1)',
+    'rgba(75, 192, 192, 1)',
+    'rgba(9, 61, 98, 1)',
+    'rgba(154, 72, 162, 1)',
+    'rgba(255, 99, 132, 1)',
+    'rgba(54, 162, 235, 1)',
+    'rgba(255, 206, 86, 1)',
+    'rgba(75, 192, 192, 1)',
+    'rgba(9, 61, 98, 1)',
+    'rgba(154, 72, 162, 1)'
+    
+];
+
 $.ajax({
 
     type:'GET',
@@ -23,25 +54,8 @@ var ctx = document.getElementById('myChart').getContext('2d');
               datasets: [{
                   label: 'Indicadores Atendimento Middle',
                   data: resultadoTabela,
-                  backgroundColor: [
-                      'rgba(255, 99, 132, 1)',
-                      'rgba(54, 162, 235, 1)',
-                      'rgba(255, 206, 86, 1)',
-                      'rgba(75, 192, 192, 1)',
-                      'rgba(75, 192, 192, 1)',
-                      'rgba(75, 192, 192, 1)',
-                      'rgba(75, 192, 192, 1)',
-                      'rgba(75, 192, 192, 1)',
-                      
-                      
-                  ],
-                  borderColor: [
-                      'rgba(255, 99, 132, 1)',
-                      'rgba(54, 162, 235, 1)',
-                      'rgba(255, 206, 86, 1)',
-                      'rgba(75, 192, 192, 1)',
-                      
-                  ],
+                  backgroundColor: corTabela,
+                  borderColor: bordaTabela,                      
                   borderWidth: 1
               }]
           },
@@ -55,6 +69,8 @@ var ctx = document.getElementById('myChart').getContext('2d');
               }
           }
       });
+    }
+});
       var chart2 = document.getElementById('chartLinhaColuna')
       var chartLinhaColuna = new Chart(chart2, {
         type: 'bar',
@@ -63,18 +79,14 @@ var ctx = document.getElementById('myChart').getContext('2d');
                 type: 'line',
                 label: 'Objetivo',
                 data: [3,3,3,3],
-                backgroundColor: 
-                'rgba(0,0,0,0.1)'
-                // Changes this dataset to become a line
+                borderColor: (0,0,0,0.1),
                
-             
-            }, {
+                }, 
+                {
                 label: 'Relizado em dias',
                 data: [1,1,1,5],
-                backgroundColor: 
-                    'rgba(20, 46, 138, 1)'
-               
-            }],
+                backgroundColor: corTabela,
+                }],
             labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril']
         },
         options: {
@@ -90,6 +102,4 @@ var ctx = document.getElementById('myChart').getContext('2d');
     });
  
 
-    }
     
-});

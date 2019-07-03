@@ -30,9 +30,9 @@
         height:520,
         indicators: true,
     });
-      setInterval(function() {
-        $('.carousel').carousel('next');
-      }, 10000);
+      // setInterval(function() {
+      //   $('.carousel').carousel('next');
+      // }, 10000);
 
     // função que verifica se a pessoa está no IE
     function isIE() {
