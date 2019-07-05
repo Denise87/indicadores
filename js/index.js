@@ -1,38 +1,38 @@
 
- 	$(function() {
-        var body = $('body');
-        var backgrounds = new Array(
-        'url(img/imagem1.jpg)',
-        'url(img/imagem2.jpg)',
-        'url(img/imagem3.jpg)'
-        );
-        var current = 0;
+ 	// $(function() {
+        // var body = $('body');
+        // var backgrounds = new Array(
+        // 'url(img/imagem1.jpg)'
+        // // 'url(img/imagem2.jpg)',
+        // // 'url(img/imagem3.jpg)'
+        // );
+        // var current = 0;
         
-        function nextBackground() {
-        body.css(
-        'background',
-        backgrounds[current = ++current % backgrounds.length],
+        // function nextBackground() {
+        // body.css(
+        // 'background',
+        // backgrounds[current = ++current % backgrounds.length],
        
-        );
+        // );
      
-        setTimeout(nextBackground, 10000);
-        body.css('background-repeat', "no-repeat");
-        body.css('background-size','cover');
-        }
-        setTimeout(nextBackground, 10000);
-        body.css('background', backgrounds[0]);
-        body.css('background-repeat', "no-repeat");
-        body.css('background-size','cover');
-        });
+        // setTimeout(nextBackground, 10000);
+        // body.css('background-repeat', "no-repeat");
+        // body.css('background-size','cover');
+        // }
+        // setTimeout(nextBackground, 10000);
+        // body.css('background', backgrounds[0]);
+        // body.css('background-repeat', "no-repeat");
+        // body.css('background-size','cover');
+        // });
 
     $('.carousel.carousel-slider').carousel({
         fullWidth: true,
         height:520,
         indicators: true,
     });
-      // setInterval(function() {
-      //   $('.carousel').carousel('next');
-      // }, 10000);
+      setInterval(function() {
+        $('.carousel').carousel('next');
+      }, 10000);
 
     // função que verifica se a pessoa está no IE
     function isIE() {

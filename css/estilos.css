@@ -1,6 +1,11 @@
 
-		#bodyIE{
-			background: url('img/imagem1.jpg') no-repeat ;
+		#bodyIE {
+			background: url('../img/imagem1.jpg') no-repeat ;
+			background-size: cover;
+		}
+
+		body{
+			background: url('../img/imagem1.jpg') no-repeat ;
 			background-size: cover;
 		}
     	.logotipo-decop{
